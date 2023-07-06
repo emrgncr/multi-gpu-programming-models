@@ -8,7 +8,7 @@ GENCODE_SM52	:= -gencode arch=compute_52,code=sm_52
 GENCODE_SM60    := -gencode arch=compute_60,code=sm_60
 GENCODE_SM70    := -gencode arch=compute_70,code=sm_70
 GENCODE_SM80    := -gencode arch=compute_80,code=sm_80 -gencode arch=compute_80,code=compute_80
-GENCODE_FLAGS	:= $(GENCODE_SM70) $(GENCODE_SM80)
+GENCODE_FLAGS	:= $(GENCODE_SM70) $(GENCODE_SM80) $(GENCODE_SM35) $(GENCODE_SM75)
 ifdef DISABLE_CUB
         NVCC_FLAGS = -Xptxas --optimize-float-atomics
 else
