@@ -2,3 +2,5 @@
 jacobi
 test-*.log
 .vscode
+*.sh
+*.out
